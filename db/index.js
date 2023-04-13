@@ -1,6 +1,6 @@
-import mySQL from "mysql";
+import mysql from "mysql2";
 import config from "../config";
 
-const connection = mySQL.createPool(config.mySQL);
+const connection = mysql.createPool(config.mysql);
 
 export default connection;
